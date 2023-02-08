@@ -52,4 +52,7 @@ while is_run:
             # score.game_over()
             score.reset()
             snake.reset()
-# screen.exitonclick() sdasdasd
+# # screen.exitonclick()
+
+
+
