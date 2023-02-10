@@ -31,6 +31,7 @@ class Scoreboard(Turtle):
 
         if self.score > self.high_score:
             with open("text.txt", mode="w") as file:
+            #with open("C:\\Users\dangtb\Desktop\dtext.txt", mode="w") as file:
                 file.write(f"{self.score}")
             #self.high_score = self.score
         self.score = 0
@@ -38,7 +39,8 @@ class Scoreboard(Turtle):
         self.update_scoreboard()
 
     def notescore(self):
-        file = open("text.txt")
+        file = open("text.txt","r")
+        #file = open("C:\\Users\dangtb\Desktop\dtext.txt", "r")
         contents = file.read()
         file.close()
         return int(contents)
